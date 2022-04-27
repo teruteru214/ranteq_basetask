@@ -39,6 +39,8 @@ gem 'sorcery', '0.14.0'
 gem 'pry-byebug'
 gem 'pry-rails'
 
+gem 'rails-i18n', '5.1.3'
+
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'faker'

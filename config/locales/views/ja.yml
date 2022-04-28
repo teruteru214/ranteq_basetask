@@ -44,3 +44,10 @@ ja:
   profiles:
     show:
       title: 'プロフィール'
+  bookmarks:
+    title: 'ブックマーク一覧'
+    empty: 'ブックマーク中の掲示板がありません'
+    create:
+      success: 'ブックマークしました'
+    destroy:
+      fail: 'ブックマーク外しました'

@@ -1,9 +1,10 @@
 class BoardsController < ApplicationController
   before_action :require_login, only: %i[index new create show]
-  before_action :find_board, only: [:edit, :update, :destroy]
+  before_action :find_board, only: %i[edit update destroy]
 
   def index
-    @boards = Board.all.includes(:user).order(created_at: :desc).page(params[:page])
+    @q = Board.ransack(params[:q])
+    @boards = @q.result(distinct: true).includes(:user).order(created_at: :desc).page(params[:page])
   end
 
   def new
@@ -12,6 +13,7 @@ class BoardsController < ApplicationController
 
   def create
     @board = current_user.boards.build(board_params)
+    binding.pry
     if @board.save
       redirect_to boards_path, success: t('defaults.message.created', item: Board.model_name.human)
     else
@@ -44,7 +46,8 @@ class BoardsController < ApplicationController
   end
 
   def bookmarks
-    @bookmark_boards = current_user.bookmark_boards.includes(:user).order(created_at: :desc).page(params[:page])
+    @q = current_user.bookmark_boards.ransack(params[:q])
+    @bookmark_boards = @q.result(distinct: true).includes(:user).order(created_at: :desc).page(params[:page])
   end
 
   private

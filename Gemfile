@@ -36,14 +36,14 @@ gem 'bootstrap', '~> 4.3.1'
 gem 'font-awesome-sass', '~> 5.11.2'
 gem 'jquery-rails'
 gem 'sorcery', '0.14.0'
-gem 'pry-byebug'
-gem 'pry-rails'
 
 gem 'rails-i18n', '5.1.3'
 gem 'draper', '3.1.0'
 gem 'carrierwave', '2.0.2'
 gem 'mini_magick'
 gem 'kaminari'
+gem 'ransack'
+gem 'pry-rails'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]

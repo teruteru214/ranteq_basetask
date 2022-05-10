@@ -12,6 +12,7 @@ ja:
       not_updated: "%{item}を更新できませんでした"
       deleted: "%{item}を削除しました"
       delete_confirm: '削除しますか？'
+    search_word: '検索ワード'
   users:
     new:
       title: 'ユーザー登録'

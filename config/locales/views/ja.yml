@@ -13,6 +13,8 @@ ja:
       deleted: "%{item}を削除しました"
       delete_confirm: '削除しますか？'
     search_word: '検索ワード'
+    update: '更新'
+    edit: '編集'
   users:
     new:
       title: 'ユーザー登録'
@@ -45,6 +47,8 @@ ja:
   profiles:
     show:
       title: 'プロフィール'
+    edit:
+      title: 'プロフィール編集'
   bookmarks:
     title: 'ブックマーク一覧'
     empty: 'ブックマーク中の掲示板がありません'

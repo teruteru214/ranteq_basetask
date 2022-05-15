@@ -15,6 +15,7 @@ ja:
     search_word: '検索ワード'
     update: '更新'
     edit: '編集'
+    password_reset: 'パスワードリセット'
   users:
     new:
       title: 'ユーザー登録'
@@ -49,6 +50,17 @@ ja:
       title: 'プロフィール'
     edit:
       title: 'プロフィール編集'
+  password_resets:
+    new:
+      title: 'パスワードリセット申請'
+      submit: '送信'
+    edit:
+      title: 'パスワードリセット'
+    create:
+      success: 'パスワードリセット手順を送信しました'
+    update:
+      success: 'パスワードを変更しました'
+      fail: 'パスワードの変更に失敗しました'
   bookmarks:
     title: 'ブックマーク一覧'
     empty: 'ブックマーク中の掲示板がありません'

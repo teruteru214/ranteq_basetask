@@ -15,3 +15,12 @@ end
       body: "本文#{index}"
   )
 end
+
+User.create!(
+  first_name: '管理者',
+  last_name: '太郎',
+  email: 'admin@example.com',
+  password: 'admin',
+  password_confirmation: 'admin',
+  admin: true
+)

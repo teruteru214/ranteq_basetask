@@ -14,9 +14,12 @@ ja:
       delete_confirm: '削除しますか？'
       not_authorized: '権限がありません'
     search_word: '検索ワード'
+    show: '詳細'
     update: '更新'
     edit: '編集'
+    delete: '削除'
     password_reset: 'パスワードリセット'
+    unspecified: '指定なし'
   users:
     new:
       title: 'ユーザー登録'
@@ -36,6 +39,20 @@ ja:
     dashboards:
       index:
         title: 'ダッシュボード'
+    users:
+      index:
+        title: 'ユーザー一覧'
+      edit:
+        title: 'ユーザー編集'
+      show:
+        title: 'ユーザー詳細'
+    boards:
+      index:
+        title: '掲示板一覧'
+      edit:
+        title: '掲示板編集'
+      show:
+        title: '掲示板詳細'
   user_sessions:
     new:
       title: 'ログイン'
